@@ -88,8 +88,9 @@ a img {
 
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 15vw;
-        margin-bottom: 2rem;
+        font-size: 13.5vw;
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
     }
 
     a {
