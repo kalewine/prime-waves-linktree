@@ -1,6 +1,6 @@
 @font-face {
-    font-family: resonantWoodsFont;
-    src: url(resources/fonts/The-Californication.ttf);
+    font-family: primeWavesFont;
+    src: url(resources/fonts/Malvie.otf);
 }
 
 body {
@@ -11,28 +11,32 @@ body {
 
 
 h1 {
-    color: #FFF;
     text-align: center;
-    font-family: resonantWoodsFont;
+    font-family: primeWavesFont;
     font-size: 6vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 1.5rem;
     margin-top: 2rem;
+    background: linear-gradient(180deg, #A189A8 0%, #95B8BE 26.56%, #ACC4B7 34.38%, #DBB892 53.13%, #EAA282 69.79%, #E9877B 87.50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
 .featured-track {
-    margin-bottom: 1.8rem;
-    -ms-transform: scale(0.85);
-    -moz-transform: scale(0.85);
-    -o-transform: scale(0.85);
-    -webkit-transform: scale(0.85);
-    transform: scale(0.85);
+    margin-bottom: 2rem;
+    -ms-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .button-links {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -42,7 +46,19 @@ h1 {
     width: 100%;
 }
 
+.filter {
+    background: linear-gradient(180deg, #A189A8 0%, #95B8BE 26.56%, #ACC4B7 34.38%, #DBB892 53.13%, #EAA282 69.79%, #E9877B 87.50%);
+    mix-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
 a {
+    color: #FFF;
     border-radius: 29px;
     border: 4px solid #FFF;
     width: 75%;
